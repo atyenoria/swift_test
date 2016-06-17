@@ -8,7 +8,7 @@
         <!--Todo List-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TodoListViewController" customModule="toDoAppSingle" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TodoListViewController" customModule="toDoAppSingle" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,13 +21,16 @@
                                 <rect key="frame" x="8" y="9" width="304" height="462"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="MnH-c8-fVE" customClass="TodoListItemTableViewCell" customModule="toDoAppSingle" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TodoListItem" id="MnH-c8-fVE" customClass="TodoListItemTableViewCell" customModule="toDoAppSingle" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="304" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MnH-c8-fVE" id="ogt-a7-io7">
                                             <rect key="frame" x="0.0" y="0.0" width="304" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="zx1-fB-hzC" kind="show" identifier="edit" id="7BS-dV-ViR"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -127,4 +130,7 @@
             <point key="canvasLocation" x="333" y="-41"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="7BS-dV-ViR"/>
+    </inferredMetricsTieBreakers>
 </document>

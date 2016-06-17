@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import MagicalRecord
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

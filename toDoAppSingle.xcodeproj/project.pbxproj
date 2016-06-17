@@ -63,8 +63,8 @@
 		38EC7DB21D1307F300F524F8 /* toDoAppSingle-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; path = "toDoAppSingle-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		38EC7DB51D131B8F00F524F8 /* TodoListItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListItemTableViewCell.swift; sourceTree = "<group>"; };
 		38EC7DB91D1329B600F524F8 /* TodoItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoItemViewController.swift; sourceTree = "<group>"; };
-		38EC7DBF1D132D5400F524F8 /* Todo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Todo+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		38EC7DC01D132D5400F524F8 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		38EC7DBF1D132D5400F524F8 /* Todo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Todo+CoreDataProperties.swift"; path = "../Todo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		38EC7DC01D132D5400F524F8 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Todo.swift; path = ../Todo.swift; sourceTree = "<group>"; };
 		6154F2CB9BBCC1B627B1A32A /* Pods-toDoAppSingle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toDoAppSingle.release.xcconfig"; path = "Pods/Target Support Files/Pods-toDoAppSingle/Pods-toDoAppSingle.release.xcconfig"; sourceTree = "<group>"; };
 		7818F8BB3116C7CD63E8401E /* Pods-toDoAppSingle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toDoAppSingle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-toDoAppSingle/Pods-toDoAppSingle.debug.xcconfig"; sourceTree = "<group>"; };
 		A2B6FA5A5DCB1D7D0FE5527E /* Pods-toDoAppSingleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toDoAppSingleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-toDoAppSingleTests/Pods-toDoAppSingleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,8 +103,6 @@
 		3890F51C1D13071F00A6B0A8 = {
 			isa = PBXGroup;
 			children = (
-				38EC7DBF1D132D5400F524F8 /* Todo+CoreDataProperties.swift */,
-				38EC7DC01D132D5400F524F8 /* Todo.swift */,
 				3890F5271D13071F00A6B0A8 /* toDoAppSingle */,
 				3890F53F1D13071F00A6B0A8 /* toDoAppSingleTests */,
 				3890F54A1D13071F00A6B0A8 /* toDoAppSingleUITests */,
@@ -128,9 +126,11 @@
 			isa = PBXGroup;
 			children = (
 				38EC7DB51D131B8F00F524F8 /* TodoListItemTableViewCell.swift */,
+				38EC7DBF1D132D5400F524F8 /* Todo+CoreDataProperties.swift */,
 				3890F5281D13071F00A6B0A8 /* AppDelegate.swift */,
 				3890F52A1D13071F00A6B0A8 /* TodoListViewController.swift */,
 				3890F52C1D13071F00A6B0A8 /* Main.storyboard */,
+				38EC7DC01D132D5400F524F8 /* Todo.swift */,
 				3890F5321D13071F00A6B0A8 /* Assets.xcassets */,
 				3890F5341D13071F00A6B0A8 /* LaunchScreen.storyboard */,
 				38EC7DB21D1307F300F524F8 /* toDoAppSingle-Bridging-Header.h */,

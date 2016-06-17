@@ -11,8 +11,16 @@ import CoreData
 
 class TodoItemViewController: UIViewController {
 
+    
+    @IBOutlet var todoField: UITextField!
+    var task: Todo? = nil
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let taskTodo = task {
+            todoField.text = taskTodo.item
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -22,16 +30,36 @@ class TodoItemViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBOutlet var todoField: UITextField!
-    
+
     @IBAction func cancel(sender: UIBarButtonItem) {
         navigationController!.popViewControllerAnimated(true)
     }
 
     
     @IBAction func save(sender: UIBarButtonItem) {
+        
+        if task != nil {
+            editTask()
+        } else {
+            createTask()
+        }
         navigationController!.popViewControllerAnimated(true)
     }
+    
+    
+    func editTask(){
+        task?.item = todoField.text!
+        task?.managedObjectContext!.MR_saveToPersistentStoreAndWait()
+    }
+    
+    func createTask(){
+        let newTask: Todo = Todo.MR_createEntity()! as Todo
+        newTask.item = todoField.text!
+        newTask.managedObjectContext!.MR_saveToPersistentStoreAndWait()
+        navigationController!.popViewControllerAnimated(true)
+    }
+    
+    
     /*
     // MARK: - Navigation
 
