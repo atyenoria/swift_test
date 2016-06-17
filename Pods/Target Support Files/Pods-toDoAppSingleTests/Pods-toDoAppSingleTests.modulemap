@@ -1,0 +1,6 @@
+framework module Pods_toDoAppSingleTests {
+  umbrella header "Pods-toDoAppSingleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
